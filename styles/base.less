@@ -35,7 +35,7 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @blueish-gray;
   }
 
   .invisible {
@@ -55,14 +55,14 @@ atom-text-editor {
 // Syntax styles
 
 .syntax--comment {
-  color: @light-gray;
+  color: @blueish-gray;
 }
 
 .syntax--keyword {
-  color: @purple;
+  color: @light-orange;
 
   &.syntax--control {
-    color: @purple;
+    color: @orange;
   }
 
   &.syntax--operator {
@@ -79,14 +79,14 @@ atom-text-editor {
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @almost-white;
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @blue;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @orange;
   }
 
   &.syntax--numeric {
@@ -94,19 +94,19 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @blue;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @light-maroon;
   }
 }
 
 .syntax--variable {
-  color: @red;
+  color: @light-orange;
 
   &.syntax--interpolation {
-    color: darken(@red, 10%);
+    color: darken(@light-orange, 10%);
   }
 
   &.syntax--parameter.syntax--function {
@@ -115,16 +115,16 @@ atom-text-editor {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
+  background-color: @light-orange;
   color: @syntax-background-color;
 }
 
 .syntax--string {
-  color: @green;
+  color: @blue;
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @light-maroon;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -132,14 +132,14 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @light-orange;
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: @blueish-gray;
     }
 
     &.syntax--string,
@@ -160,13 +160,13 @@ atom-text-editor {
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @almost-white;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@light-orange, 10%);
   }
 
 }
@@ -177,17 +177,17 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @orange;
 
     &.syntax--any-method {
-      color: @blue;
+      color: @orange;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @orange;
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
@@ -195,7 +195,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @dark-maroon;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
@@ -206,7 +206,7 @@ atom-text-editor {
   }
 
   &.syntax--name.syntax--tag {
-    color: @red;
+    color: @light-orange;
     text-decoration: underline;
   }
 
@@ -221,7 +221,7 @@ atom-text-editor {
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @orange;
   }
 
   &.syntax--link {
@@ -229,15 +229,15 @@ atom-text-editor {
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @light-maroon;
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @light-maroon;
   }
 
   &.syntax--separator {
-    background-color: @gray;
+    background-color: @blueish-gray;
     color: @syntax-text-color;
   }
 }
@@ -253,7 +253,7 @@ atom-text-editor {
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @blue;
   }
 
   &.syntax--deleted {
@@ -261,12 +261,12 @@ atom-text-editor {
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @light-orange;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+    color: @orange;
   }
 
   &.syntax--inserted {
@@ -274,15 +274,15 @@ atom-text-editor {
   }
 
   &.syntax--list {
-    color: @red;
+    color: @light-orange;
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @almost-white;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @blue;
   }
 }
 
