@@ -1,39 +1,26 @@
 // Config -----------------------------------
-@syntax-hue: 228;
-@syntax-saturation: 13%;
-@syntax-brightness: 19%;
+@syntax-hue: 220;
+@syntax-saturation: 21%;
+@syntax-brightness: 16%;
 
-@dark-gray: #212733;
-@almost-white: #fffbed;
-@yellowish: #d7ac5e;
-@blueish-gray: #929a96;
-@orange: #d46b2d;
-@light-orange: #d6a379;
-@dirty-water: #cfc4ac;
-@blue: #62a4c3;
-@green: rgb(27, 166, 57);
-@red: rgb(180, 47, 11);
+@background: hsl(
+  @syntax-hue,
+  @syntax-saturation,
+  @syntax-brightness
+); // dark grey
+@text: #fffbed; // white
+@highlight-1: #d7ac5e; // yellowish
+@comments: #929a96; // blueish gray
+@highlight-2: #d46b2d; //orange
+@highlight-3: #d6a379; // light orange
+@auxiliary-text: #cfc4ac; // dirty white
+@variables: #62a4c3; // blue
 
-// Monochrome -----------------------------------
-@mono-1: @almost-white; // default text
-@mono-2: @dirty-water;
-@mono-3: @blueish-gray;
-
-// Colors -----------------------------------
-@hue-1: @almost-white; // <-cyan
-@hue-2: @dirty-water; // <-blue
-@hue-3: @orange; // <-purple
-@hue-4: @yellowish; // <-green
-
-@hue-5: lighten(@blue, 10%); // <-red 1
-@hue-5-2: @blue; // <-red 2
-
-@hue-6: @yellowish; // <-orange 1
-@hue-6-2: @light-orange; // <-orange 2
+@light-variables: lighten(@variables, 10%);
 
 // Base colors -----------------------------------
-@syntax-fg: @almost-white;
-@syntax-bg: @dark-gray;
+@syntax-fg: @text;
+@syntax-bg: @background;
 @syntax-gutter: darken(@syntax-fg, 36%);
 @syntax-guide: fade(@syntax-fg, 15%);
-@syntax-accent: @orange;
+@syntax-accent: @highlight-2;

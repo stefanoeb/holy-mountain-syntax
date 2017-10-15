@@ -1,14 +1,12 @@
 {
   "name": "holy-mountain-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "keywords": [
-    "syntax",
-    "theme"
-  ],
+  "version": "0.1.0",
+  "description": "Atom syntax theme inspired in snowy mountains",
+  "keywords": ["syntax", "theme"],
   "repository": "https://github.com/atom/holy-mountain-syntax",
   "license": "MIT",
+  "author": "Stefano Ernesto Bourscheid",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   }

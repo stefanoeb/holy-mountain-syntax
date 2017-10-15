@@ -1,6 +1,7 @@
-@import "syntax-variables";
+@import 'syntax-variables';
 
-atom-text-editor, atom-text-editor {
+atom-text-editor,
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -63,14 +64,14 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--comment {
-  color: @mono-3;
+  color: @comments;
 }
 
 .syntax--keyword {
   color: @syntax-color-keyword;
 
   &.syntax--control {
-    color: @hue-3;
+    color: @highlight-2;
   }
 
   &.syntax--operator {
@@ -98,23 +99,23 @@ atom-text-editor .search-results .marker.current-result .region {
   }
 
   &.syntax--numeric {
-    color: @hue-6-2;
+    color: @highlight-3;
   }
 
   &.syntax--other.syntax--color {
-    color: @hue-1;
+    color: @text;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @hue-4;
+    color: @highlight-1;
   }
 }
 
 .syntax--variable {
-  color: @hue-5;
+  color: @light-variables;
 
   &.syntax--interpolation {
-    color: darken(@hue-5, 10%);
+    color: darken(@light-variables, 10%);
   }
 
   &.syntax--parameter.syntax--function {
@@ -123,31 +124,30 @@ atom-text-editor .search-results .marker.current-result .region {
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @hue-3;
+  background-color: @highlight-2;
   color: @syntax-background-color;
 }
 
 .syntax--string {
-  color: @hue-4;
-
+  color: @highlight-1;
 
   &.syntax--regexp {
-    color: @hue-4;
+    color: @highlight-1;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @hue-6-2;
+      color: @highlight-3;
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @hue-5;
+    color: @light-variables;
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @mono-3;
+      color: @comments;
     }
 
     &.syntax--string,
@@ -159,93 +159,93 @@ atom-text-editor .search-results .marker.current-result .region {
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @hue-2;
+      color: @auxiliary-text;
     }
 
     &.syntax--bold {
-      color: @hue-6;
+      color: @highlight-1;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @hue-3;
+      color: @highlight-2;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@hue-5, 10%);
+    color: darken(@light-variables, 10%);
   }
-
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @hue-6;
+    color: @highlight-1;
   }
 
-  &.syntax--function  {
+  &.syntax--function {
     color: @cyan;
 
     &.syntax--any-method {
-      color: @hue-2;
+      color: @auxiliary-text;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @hue-2;
+    color: @auxiliary-text;
   }
   &.syntax--name.syntax--type {
-    color: @hue-6;
+    color: @highlight-1;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @hue-4;
+    color: @highlight-1;
   }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @hue-6;
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
+    color: @highlight-1;
   }
 
   &.syntax--name.syntax--section {
-    color: @hue-2;
+    color: @auxiliary-text;
   }
 
   &.syntax--name.syntax--tag {
-    color: @hue-5;
+    color: @light-variables;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @hue-6-2;
+    color: @highlight-3;
 
     &.syntax--id {
-      color: @hue-2;
+      color: @auxiliary-text;
     }
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @hue-6;
+    color: @highlight-1;
   }
 
   &.syntax--link {
-    color: @hue-6-2;
+    color: @highlight-3;
   }
 
   &.syntax--require {
-    color: @hue-2;
+    color: @auxiliary-text;
   }
 
   &.syntax--selector {
-    color: @hue-3;
+    color: @highlight-2;
   }
 
   &.syntax--separator {
-    background-color: @mono-1;
+    background-color: @text;
     color: @syntax-text-color;
   }
 }
@@ -256,48 +256,48 @@ atom-text-editor .search-results .marker.current-result .region {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @hue-6-2;
+    color: @highlight-3;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @hue-3;
+    color: @highlight-2;
   }
 
   &.syntax--deleted {
-    color: @hue-5;
+    color: @light-variables;
   }
 
   &.syntax--italic {
-    color: @hue-3;
+    color: @highlight-2;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @hue-2;
+    color: @auxiliary-text;
   }
 
   &.syntax--inserted {
-    color: @hue-4;
+    color: @highlight-1;
   }
 
   &.list {
-    color: @hue-5;
+    color: @light-variables;
   }
 
   &.syntax--quote {
-    color: @hue-6-2;
+    color: @highlight-3;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @hue-4;
+    color: @highlight-1;
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @hue-4;
+    color: @highlight-1;
   }
 }
 
