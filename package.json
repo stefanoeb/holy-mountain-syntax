@@ -1,7 +1,7 @@
 {
   "name": "holy-mountain-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Atom syntax theme inspired in snowy mountains",
   "keywords": ["syntax", "theme", "atom", "autumn"],
   "repository": "https://github.com/stefanoeb/holy-mountain-syntax",
