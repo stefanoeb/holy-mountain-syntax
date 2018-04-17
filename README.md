@@ -2,4 +2,4 @@
 
 An atom syntax theme inspired in autumn and winter colors
 
-![Theme screenshot](./image/demo.png)
+![Theme screenshot](./images/demo.png)
